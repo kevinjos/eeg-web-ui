@@ -13,10 +13,9 @@ makescene = function(i) {
                             'autoScale':false,
                             'autoCenter':false,
                             'autoBounds':true,
-                            'camera':{ eye:    [28.84134525894378, -26.3245391529961, 71.80368050495437],
-                                 center: [22.289583196651314, 20.08832142763649, 7.223370490280737],
-                                 up:     [0.002174851458812025, 0.8121432512118254, 0.5834540337783416],
-                                 zoomMax: 500}
+                            'camera':{ eye:    [0.5, 0.0, 1.5],
+                                 center: [0.5, 0.0, 0.0],
+                                 up:     [0.0, 1.0, 0.0]}
                             });
 	varmap['fft'+i] = ndarray(new Float32Array(window.fftsize*timesize), [window.fftsize,timesize]);
 	varmap['surface'+i] = createSurfacePlot({
